@@ -7,7 +7,7 @@
         <title>{% block title %}Home {% endblock title %}</title>
         {% block head_favicon %}
             <link rel="icon" type="image/png"
-                  href="{% static "images/favicon.jpg" %}>
+                  href="{% static "home/images/favicon.jpg" %}">
         {% endblock head_favicon %}
         {% block head_meta %}
             {% block head_meta_charset %}
@@ -22,69 +22,99 @@
                       content="width=device-width, initial-scale=1.0">
             {% endblock head_meta_viewport %}
         {% endblock head_meta %}
+
+        {# CSS files#}
         {% block head_css %}
             {% block head_css_site %}
-                <link href="{% static "css/bootstrap.min.css" %}
-                      rel="stylesheet" media="screen">
-                <link href="{% static "css/app.css" %}
+                <link href="{% static "home/css/bootstrap.min.css" %}"
                       rel="stylesheet" media="screen">
             {% endblock head_css_site %}
             {% block head_css_section %}{% endblock head_css_section %}
             {% block head_css_page %}{% endblock head_css_page %}
         {% endblock head_css %}
+
+        <style>
+          .footer {
+              position: fixed;
+              bottom: 0;
+              width: 100%;
+              /* Set the fixed height of the footer here */
+              height: 80px;
+              line-height: 80px; /* Vertically center the text there */
+              background-color: #111;
+              }
+        </style>
     </head>
 
-    <body>
+
     {# Navigation Menu #}
-    <header>
-        <div class="navbar navbar-default navbar-static-top
-        {% block nav-style %}{% endblock %}">
-            <div class="container p-none">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle"
-                            data-toggle="collapse"
-                            data-target=".navbar-collapse">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="/">CRM Easy</a>
-                </div>
-                <div class="collapse navbar-collapse">
-                    <ul class="nav navbar-nav navbar-right">
-                        {% if user.is_authenticated %}
-                            <li><a href="">Logout</a></li>
-                            <li><a href=""
-                                   class="p-r-none">Accounts</a></li>
-                        {% else %}
-                            <li><a href="">Login</a></li>
-                            <li><a href="" class="p-r-none">Sign Up</a></li>
-                        {% endif %}
-                    </ul>
-                </div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <a class="navbar-brand" href="#">
+          <img src="{% static "home/images/favicon.jpg" %}" width="30" height="30" class="d-inline-block align-top" alt="">
+          Toran Sahu
+        </a>
+
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Logs</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Tech Blog</a>
+              <a class="dropdown-item" href="#">Blog</a>
+              <a class="dropdown-item" href="#">Vlog</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Separated link</a>
             </div>
-        </div>
-    </header>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Apps</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+      </div>
+    </nav>
+
     {# The Document Body #}
-    <div id="site-wrapper">
-        {% block content %}
-            if you see this, something is wrong!
-        {% endblock content %}
-    </div>
-    {# The Footer #}
-    <div class="footer">
-        <div class="container">
-            <p>Copyright CRM Easy</p>
+    <body>
+        <div id="site-wrapper">
+          {# content will be replaced by child pages #}
+            {% block content %}
+                if you see this, something is wrong!
+            {% endblock content %}
         </div>
-    </div>
-</body>
+    </body>
+
+    {# The Footer #}
+    <footer class="footer">
+      <div class="container" align="center">
+        <span class="text-muted">
+          Copyright &copy; 2017. All rights reserved.
+        </span>
+      </div>
+    </footer>
 
 {# Set of blocks that can be used to display JavaScript files #}
     {% block footer_javascript %}
         {% block footer_javascript_site %}
-            <script src="{% static "js/jquery.min.js" %}></script>
-            <script src="{% static "js/bootstrap.min.js" %}></script>
-            <script src="{% static "js/app.js" %}></script>
+            <script src="{% static "home/js/jquery-3.2.1.js" %}"></script>
+            <script src="{% static "home/js/bootstrap.min.js" %}"></script>
         {% endblock footer_javascript_site %}
         {% block footer_javascript_section %}{% endblock footer_javascript_section %}
         {% block footer_javascript_page %}{% endblock footer_javascript_page %}
