@@ -69,26 +69,24 @@
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Logs</a>
             <div class="dropdown-menu">
-              <a class="dropdown-item" href="#">Tech Blog</a>
-              <a class="dropdown-item" href="#">Blog</a>
-              <a class="dropdown-item" href="#">Vlog</a>
+
+              <a class="dropdown-item" href="#">Blogs</a>
+              <a class="dropdown-item" href="#">Vlogs</a>
               <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Separated link</a>
+              <a class="dropdown-item" href="/blog-api/blog">Tech</a>
             </div>
           </li>
-          <li class="nav-item dropdown">
+          <li class="nav-item dropdown bg-dark">
             <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Apps</a>
             <div class="dropdown-menu">
-              <a class="dropdown-item" href="#">App1</a>
-              <a class="dropdown-item" href="#">App2</a>
+              <a class="dropdown-item" href="/polls">Polls</a>
+              <a class="dropdown-item" href="/blog-api">REST API Demo</a>
               <a class="dropdown-item" href="#">App3</a>
               <div class="dropdown-divider"></div>
               <a class="dropdown-item" href="/admin">Admin</a>
             </div>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href='/polls/'>Polls</a>
-          </li>
+
           <li class="nav-item">
             <a class="nav-link disabled" href="#">Services</a>
           </li>
@@ -96,10 +94,12 @@
             <a class="nav-link" href="#">Contact</a>
           </li>
         </ul>
+          <!--
         <form class="form-inline my-2 my-lg-0">
           <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
           <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
         </form>
+        -->
       </div>
     </nav>
 
@@ -125,7 +125,7 @@
 {# Set of blocks that can be used to display JavaScript files #}
     {% block footer_javascript %}
         {% block footer_javascript_site %}
-            <script src="{% static "home/js/jquery-3.2.1.js" %}"></script>
+            <script src="{% static "home/js/jquery-3.2.1.min.js" %}"></script>
             <script src="{% static "home/js/bootstrap.min.js" %}"></script>
         {% endblock footer_javascript_site %}
         {% block footer_javascript_section %}{% endblock footer_javascript_section %}
