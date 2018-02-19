@@ -70,7 +70,7 @@ WSGI_APPLICATION = 'toransahu.wsgi.application'
 # https://docs.djangoproject.com/en/2.0/ref/settings/#databases
 
 DATABASES = {
-    'sqllite': {
+    'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     },
@@ -81,7 +81,7 @@ DATABASES = {
         'HOST': 'localhost',
         'PORT': '',
     },
-    'default': {
+    'psql': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'toransahu',
         'USER': 'toran',
