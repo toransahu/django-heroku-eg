@@ -74,24 +74,23 @@ DATABASES = {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     },
-    '''
-    'mysql': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'toransahu',
-        'USER': 'toran',
-        'HOST': 'localhost',
-        'PORT': '',
-    },
-    'psql': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'toransahu',
-        'USER': 'toran',
-        'PASSWORD': 'password',
-        'HOST': 'localhost',
-        'PORT': '',
-    }
-    '''
-    
+
+    # 'mysql': {
+    #     'ENGINE': 'django.db.backends.mysql',
+    #     'NAME': 'toransahu',
+    #     'USER': 'toran',
+    #     'HOST': 'localhost',
+    #     'PORT': '',
+    # },
+    # 'psql': {
+    #     'ENGINE': 'django.db.backends.postgresql_psycopg2',
+    #     'NAME': 'toransahu',
+    #     'USER': 'toran',
+    #     'PASSWORD': 'password',
+    #     'HOST': 'localhost',
+    #     'PORT': '',
+    # }
+    #
 }
 
 
