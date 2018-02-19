@@ -9,7 +9,6 @@ name = "pypi"
 
 django = "*"
 djangorestframework = "*"
-mysqlclient = "*"
 pygments = "*"
 gunicorn = "*"
 
