@@ -20,6 +20,6 @@ SECRET_KEY = '6r=p$2nh^@=)f_hpe@&dbm1h(yj^55^0wla^sm3*v2%#85p=jp'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['toransahu.pythonanywhere.com', '127.0.0.1']
+ALLOWED_HOSTS = ['toransahu.herokuapp.com', 'toransahu.pythonanywhere.com', '127.0.0.1']
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'allstatic')
