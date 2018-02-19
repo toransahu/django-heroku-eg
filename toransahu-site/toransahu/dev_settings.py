@@ -35,7 +35,7 @@ SECRET_KEY = '6r=p$2nh^@=)f_hpe@&dbm1h(yj^55^0wla^sm3*v2%#85p=jp'
 DEBUG = True
 
 # allowed host not required in dev
-# ALLOWED_HOSTS = ['toransahu.pythonanywhere.com', '127.0.0.1']
+# ALLOWED_HOSTS = ['toransahu.herokuapp.com', 'toransahu.pythonanywhere.com', '127.0.0.1', '0.0.0.0']
 
 
 # not required to set STATIC_ROOT
