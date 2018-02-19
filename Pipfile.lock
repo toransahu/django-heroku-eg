@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "622aae3cfcfea3ecf4bee504c19c9c81b5032dfc0d92329f787cd965e1e16c1a"
+            "sha256": "d5b4fe219a2584eedb97b11360a259d031c82cc0ced75e51b40f413b76b27a6e"
         },
         "host-environment-markers": {
             "implementation_name": "cpython",
@@ -40,6 +40,13 @@
                 "sha256:9f9e94e8d22b100ed3a43cee8c47a7ff7b185e778a1f2da9ec5c73fc4e081b87"
             ],
             "version": "==3.7.7"
+        },
+        "gunicorn": {
+            "hashes": [
+                "sha256:75af03c99389535f218cc596c7de74df4763803f7b63eb09d77e92b3956b36c6",
+                "sha256:eee1169f0ca667be05db3351a0960765620dad53f53434262ff8901b68a1b622"
+            ],
+            "version": "==19.7.1"
         },
         "mysqlclient": {
             "hashes": [
