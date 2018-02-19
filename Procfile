@@ -1,1 +1,1 @@
-web: gunicorn toransahu.wsgi
+web: gunicorn toransahu-site.toransahu.wsgi
