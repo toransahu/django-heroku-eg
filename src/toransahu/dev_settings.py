@@ -13,7 +13,6 @@ STATICFILES_DIRS = [
     '/var/www/static/',
 ]
 
-
 # Production level settings - HTTPS may cause error in browser, use incognito tab
 CSRF_COOKIE_SECURE = False
 SESSION_COOKIE_SECURE = False
