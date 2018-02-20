@@ -1,7 +1,7 @@
 from .base_settings import *
 
 
-# only required in development server, otherwise it will conflits with collectstatic in production
+# only required in development server, otherwise it will conflict with collectstatic in production
 STATICFILES_FINDERS = (
     'django.contrib.staticfiles.finders.FileSystemFinder',
     'django.contrib.staticfiles.finders.AppDirectoriesFinder'
@@ -35,7 +35,7 @@ SECRET_KEY = '6r=p$2nh^@=)f_hpe@&dbm1h(yj^55^0wla^sm3*v2%#85p=jp'
 DEBUG = True
 
 # allowed host not required in dev
-# ALLOWED_HOSTS = ['toransahu.herokuapp.com', 'toransahu.pythonanywhere.com', '127.0.0.1', '0.0.0.0']
+ALLOWED_HOSTS = ['toransahu.herokuapp.com', 'toransahu.pythonanywhere.com', '127.0.0.1', '0.0.0.0']
 
 
 # not required to set STATIC_ROOT
