@@ -1,1 +1,1 @@
-web: gunicorn --pythonpath toransahu-site toransahu.wsgi
+web: gunicorn --pythonpath src toransahu.wsgi
