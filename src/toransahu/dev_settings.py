@@ -38,4 +38,4 @@ ALLOWED_HOSTS = ['toransahu.herokuapp.com', 'toransahu.pythonanywhere.com', '127
 
 
 # not required to set STATIC_ROOT
-# STATIC_ROOT = os.path.join(BASE_DIR, 'allstatic') # don't name it 'static', during collection django gets confused
+STATIC_ROOT = os.path.join(BASE_DIR, 'allstatic') # don't name it 'static', during collection django gets confused
