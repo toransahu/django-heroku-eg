@@ -29,5 +29,6 @@ STATICFILES_FINDERS = (
 )
 
 
+STATIC_URL = '/allstatic/'
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'allstatic')
