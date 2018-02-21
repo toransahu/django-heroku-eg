@@ -1,18 +1,21 @@
 from .base_settings import *
 
 
-# only required in development server, otherwise it will conflict with collectstatic in production
+# not necessary, but better
+'''
 STATICFILES_FINDERS = (
     'django.contrib.staticfiles.finders.FileSystemFinder',
     'django.contrib.staticfiles.finders.AppDirectoriesFinder'
 )
+'''
 
-
+# only for dev server, otherwise it will conflict with collectstatic in production
+'''
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static'), 
     '/var/www/static/',
 ]
-
+'''
 # Production level settings - HTTPS may cause error in browser, use incognito tab
 CSRF_COOKIE_SECURE = False
 SESSION_COOKIE_SECURE = False
@@ -37,5 +40,5 @@ DEBUG = True
 ALLOWED_HOSTS = ['toransahu.herokuapp.com', 'toransahu.pythonanywhere.com', '127.0.0.1', '0.0.0.0']
 
 
-# not required to set STATIC_ROOT
-STATIC_ROOT = os.path.join(BASE_DIR, 'allstatic') # don't name it 'static', during collection django gets confused
+# not required to set STATIC_ROOT in dev
+# STATIC_ROOT = os.path.join(BASE_DIR, 'allstatic') # don't name it 'static', during collection django gets confused
