@@ -24,3 +24,6 @@ ALLOWED_HOSTS = ['toransahu.herokuapp.com', 'toransahu.pythonanywhere.com', '127
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'allstatic')
 
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'static'),
+]
