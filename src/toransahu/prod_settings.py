@@ -22,13 +22,6 @@ DEBUG = False
 
 ALLOWED_HOSTS = ['toransahu.herokuapp.com', 'toransahu.pythonanywhere.com', '127.0.0.1', '0.0.0.0']
 
-
-STATICFILES_FINDERS = (
-    'django.contrib.staticfiles.finders.FileSystemFinder',
-    'django.contrib.staticfiles.finders.AppDirectoriesFinder'
-)
-
-
 STATIC_URL = '/allstatic/'
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'allstatic')
