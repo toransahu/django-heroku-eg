@@ -23,3 +23,5 @@ DEBUG = False
 ALLOWED_HOSTS = ['toransahu.herokuapp.com', 'toransahu.pythonanywhere.com', '127.0.0.1', '0.0.0.0']
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'allstatic')
+
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
