@@ -7,11 +7,12 @@ name = "pypi"
 
 [packages]
 
-Django = "==2.0.2"
+django = "==2.0.2"
 djangorestframework = "==3.7.7"
 gunicorn = "==19.7.1"
-Pygments = "==2.2.0"
+pygments = "==2.2.0"
 pytz = "==2018.3"
+whitenoise = "*"
 
 
 [dev-packages]
